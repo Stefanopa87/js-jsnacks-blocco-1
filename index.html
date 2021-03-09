@@ -1,0 +1,158 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>09.mar.2021</title>
+
+    <style media="screen">
+
+    body{
+      background-color: grey;
+    }
+    h1{
+      text-align: center;
+      color: blue;
+      margin-top: 50px;
+    }
+
+    #pari{
+      color: green;
+    }
+
+    #dispari{
+      color: red;
+    }
+    </style>
+  </head>
+  <body>
+    <h1 id="pari"></h1>
+    <br>
+    <h1 id="dispari"></h1>
+
+    <script type="text/javascript">
+
+    // Generatore di "nomi cognomi" casuali: prendendo una
+        // lista di nomi e una lista di cognomi, Gatsby vuole
+        // generare una falsa lista di invitati.
+
+        // var names = ['mario', 'pippo', 'luca'];
+        // var lastnames = ['patti', 'rossi', 'fiore'];
+        //
+        // var fullnames = [];
+        //
+        // var nameLng = names.length;
+        // var lastnameLng = lastnames.length;
+        //
+        //
+        // for (var i=0;i<5;i++) {
+        //     var nameRnd = names[Math.floor(Math.random() * nameLng)];
+        //     var lastnameRnd = lastnames[Math.floor(Math.random() * lastnameLng)];
+        //
+        //     fullnames.push(nameRnd + ' ' + lastnameRnd);
+        // }
+        // console.log(fullnames);
+
+        // *****************************************************
+
+
+        // Crea due array che hanno un numero di elementi diversi.
+        // Aggiungi elementi all'array che ha meno elementi fino a
+        // quando ne avrà tanti quanti l'altro.
+
+        // var arr1 = [ 5, 5, 7, 9 ];
+        // var arr2 = [ 15 ];
+        //
+        // var arr1lng = arr1.length;
+        // var arr2lng = arr2.length;
+        //
+        // var diff = arr1lng - arr2lng;
+        //
+        //
+        // for (var i = 0; i < diff; i++) {
+        //
+        //   var addObject = parseInt (prompt ("inserisci un numero"));
+        //
+        //   if (arr1lng < arr2lng){
+        //     arr1.push(addObject);
+        //   } else if (arr1lng == arr2lng){
+        //     break;
+        //   } else if (arr1lng > arr2lng){
+        //     arr2.push(addObject);
+        //   }
+        // }
+        //
+        // console.log(arr1)
+        // console.log(arr2)
+
+        // *********************************************************
+
+
+        // Chiedere all'utente un valore limite, poi richiedere all'utente una serie di valori
+        // finche' la somma non supera il valore limite e stampare i valori forniti dall'utente
+
+        // var limit = parseInt(prompt('Dimmi un numero massimo'));
+        //
+        // var sum = 0;
+        //
+        // var values = [];
+        //
+        // while (sum < limit) {
+        //
+        //     var value = parseInt(prompt('Dimmi dei numeri inferiori al massimo'));
+        //     values.push(value);
+        //     sum += value; // sum = sum + value;
+        // }
+        // console.log(sum, values);
+
+        // ***********************************************************
+
+
+        // Crea due tag div con due id diversi.
+        // Un div avrà il testo colorato di rosso mentre l'altro di verde.
+        // Partendo da un array di numeri, stampiamo nell'id rosso i numeri
+        // dispari e in verde i numeri pari.
+
+        var numbers = [22, 5, 90, 30, 44, 66, 21, 12, 17, 19];
+
+
+        for (var i = 0; i < numbers.length; i++) {
+
+          var elem = numbers[i];
+
+          if (elem % 2 == 0) {
+            document.getElementById('pari').innerHTML += elem + ' ';
+          } else if (elem % 2 == 1){
+            document.getElementById('dispari').innerHTML += elem + ' ' ;
+          }
+        }
+
+        // *************************************************************
+
+
+        // extra mio (differenza tra for e while)
+        // scrivi un array con 5 elementi, stmpali singolarmente, poi stampali con un for
+
+        // var bacino = ["ciao", "pippo", "mondo", "casa", "mare"]
+        //
+        // console.log(bacino[0]);
+        // console.log(bacino[1]);
+        // console.log(bacino[2]);
+        // console.log(bacino[3]);
+        // console.log(bacino[4]);
+        //
+        <!-- si può usare questo -->
+        // // for (var i = 0; i < bacino.length; i++) {
+        // //   console.log(bacino[i])
+        // // }
+        //
+        <!-- oppure si può usare questo, il risultato non cambia-->
+        // var i = 0;
+        //
+        // while (i < bacino.length) {
+        //   console.log(bacino[i])
+        //
+        //   i++
+        // }
+
+    </script>
+  </body>
+</html>
