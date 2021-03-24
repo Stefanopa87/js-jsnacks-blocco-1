@@ -42,15 +42,38 @@ function ex2(){
 // ----------------------------------------------------
 
 // - Dare la possibilità all'utente attraverso 3 prompt di
-// aggiungere un nuovo oggetto studente inserendo
+// aggiungere un nuovo oggetto cliente/passeggero inserendo
 // nell'ordine: nome, cognome e età.
 
+function ex3(){
+
+  var pax =
+   [{nome: 'lucia',cognome: 'tosti', età: 50},
+   // i numeri possono essere messi con apici e senza apici
+    {nome: 'barbara',cognome: 'campoli', età: '55'}];
+
+  var nome = prompt('dimmi il tuo nome');
+  var cognome = prompt('dimmi il tuo cognome');
+  var età = parseInt(prompt('dimmi la tua età'));
+
+  pax.push({
+    nome: nome,
+    cognome: cognome,
+    età: età
+  });
+
+  for (var i = 0; i < pax.length; i++) {
+    console.log(pax[i]);
+  }
+}
 
 function init(){
 
   // ex1();
 
-  ex2();
+  // ex2();
+
+  ex3();
 
 }
 
