@@ -6,7 +6,7 @@
     <style media="screen">
 
     body{
-      background-color: grey;
+      background-color: #5f1818;
     }
     h1{
       text-align: center;
@@ -22,6 +22,8 @@
       color: red;
     }
     </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/script.js" charset="utf-8"></script>
   </head>
   <body>
     <h1 id="pari"></h1>
@@ -111,19 +113,19 @@
         // Partendo da un array di numeri, stampiamo nell'id rosso i numeri
         // dispari e in verde i numeri pari.
 
-        var numbers = [22, 5, 90, 30, 44, 66, 21, 12, 17, 19];
-
-
-        for (var i = 0; i < numbers.length; i++) {
-
-          var elem = numbers[i];
-
-          if (elem % 2 == 0) {
-            document.getElementById('pari').innerHTML += elem + ' ';
-          } else if (elem % 2 == 1){
-            document.getElementById('dispari').innerHTML += elem + ' ' ;
-          }
-        }
+        // var numbers = [22, 5, 90, 30, 44, 66, 21, 12, 17, 19];
+        //
+        //
+        // for (var i = 0; i < numbers.length; i++) {
+        //
+        //   var elem = numbers[i];
+        //
+        //   if (elem % 2 == 0) {
+        //     document.getElementById('pari').innerHTML += elem + ' ';
+        //   } else if (elem % 2 == 1){
+        //     document.getElementById('dispari').innerHTML += elem + ' ' ;
+        //   }
+        // }
 
         // *************************************************************
 
@@ -152,7 +154,6 @@
         //
         //   i++
         // }
-
     </script>
   </body>
 </html>
