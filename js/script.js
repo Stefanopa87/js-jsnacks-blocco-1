@@ -67,13 +67,67 @@ function ex3(){
   }
 }
 
+
+//  ---------------------------------------------
+
+// Scrivi una funzione che accetti tre argomenti:
+// un array e due numeri ("a" più piccolo di "b" e "b" grande al
+// massimo quanto il numero di elementi dell'array).
+// La funzione ritornerà un nuovo array con i valori che
+// hanno la posizione compresa tra "a" e "b"
+
+// BONUS: controlla che che 'a' e 'b' rispettino i parametri
+
+function ex4(){
+
+  var a = 2;
+  var b = 6;
+  //           0  1  2   3   4   5   6  7   8
+  var array = [1, 2, 56, 77, 33, 6, 20, 8, 22];
+
+  result(a, b, array);
+
+  function result(min, max, arr){
+
+    var maxAddmitted = arr.length;
+    var minAddmitted = 0;
+
+    if (min > max){
+      var pippo = min;
+      var pluto = max;
+      min = pluto;
+      max = pippo;
+
+    } if (max > arr.length){
+      max = maxAddmitted-1;
+
+    } if (min < 0){
+      min = minAddmitted;
+    }
+
+    var mix = [];
+
+    for (var i = min; i <= max; i++) {
+
+      mix.push(arr[i])
+    }
+    console.log(mix);
+  }
+}
+ex4();
+
+
+
+
 function init(){
 
   // ex1();
 
   // ex2();
 
-  ex3();
+  // ex3();
+
+  ex4();
 
 }
 
